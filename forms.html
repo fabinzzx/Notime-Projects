@@ -6,42 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="ml-10 bg-zinc-900 ">
-    <h1 class="text-3xl text-center bg-zinc-300 font-serif mt-15">Connect with me </h1>
+<body class=" bg-zinc-300  width: 100 px height:100 px">
+    <h1 class="text-3xl text-center  mt-15 pb-10 pt-5">CONNECT WITH ME </h1>
     <!-- Form -->
     <div class="flex justify-center">
-        <form class="bg-zinc-300 ">
+        <form class="border border-gray-400 max-w-md p-20">
             <div class="flex  ">
 
                 <label for="FName">First Name </label>
-                <br><input class="rounded-lg ml-5  pl-5" type="text" name="FName" placeholder="First Name">
-                <label class="ml-20" for="Lname">Last Name</label><input class="rounded-lg ml-5 pl-5" type="text"
-                    name="LName" placeholder="Last Name">
+                <br><input class="rounded-lg ml-5 mr-3 py-3 pl-5" type="text" name="FName" placeholder="First Name">
+                
             </div>
             <br>
-            <label for="Email">Email:</label>
-            <input class="rounded-lg ml-5 py-3 pl-5" type="email" name="Email" placeholder="Enter your email">
+           <div class="flex justify-center">
+            <label  class="pr-5"for="Email">Email</label>
+            <input class="rounded-lg ml-5 py-3 pl-5 " type="email" name="Email" placeholder="Enter your email">
+        </div>
             <br>
             <br>
-            <label>Message:</label>
+            <div class="flex justify-center">
+            <label class="pb-20">Message:</label>
             <br>
-            <textarea name="textarea" cols="30" rows="10"></textarea>
+            
+            <textarea class="rounded-lg bg-blue-50"name="textarea" cols="30" rows="10"></textarea>
+            </div>
+            
             <br>
-            <br>
+            <br><div class="flex justify-center font-bold">
+        
             <label>Education</label>
-            <select name="education">
+            <br>
+            <BR>
+        </div>
+            <div class="flex justify-center">
+           
+            <select class="rounded-lg py-5 pl-5 bg-blue-50" name="education">
                 <option value="ug">Undergraduate</option>
                 <option value="pg">Postgraduate</option>
                 <option value="diploma">Diploma</option>
 
             </select>
+        
             <br>
             <br>
+        </div>
+        <br>
+        <br>
+        <div class="flex justify-center font-bold">
             <label>Hobbies</label>
             <br>
             <BR>
+            </div>
+            <div class="flex justify-center font-bold">
             <label>Cricket</label>
             <input type="checkbox" value="cricket" name="Hobbies[]">
 
@@ -52,12 +71,15 @@
             <input type="checkbox" value="basketball" name="Hobbies[]">
             <br>
             <br>
+        </div>
+        <div class="flex justify-center">
             <input type="file" value="image" name="img">
             <br>
             <br>
-            <input type="submit" value="Submit">
+            </div>
+            <div class="flex justify-center ">
+            <input class="py-5 px-5 bg-blue-300 rounded-lg font-bold"type="submit" value="Submit">
+            </div>
+        </div>
         </form>
-    </div>
-</body>
-
 </html>
